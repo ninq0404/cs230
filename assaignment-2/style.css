@@ -24,7 +24,11 @@ footer{
     padding: 3px;
     background-color: #333333;
     color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     }
+
 
 /* card elements */
 pre{

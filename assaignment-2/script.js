@@ -33,13 +33,20 @@ let items = [...tasksDef];
 for (let i = 0; i < items.length; i++){
     console.log(items[i]); }
 
-printConsole.addEventListener("click", (printConsole) => {
-    for (let i = 0; i < items.length; i++){
-        printToConsole(items[i]); } });
+
+printConsole.addEventListener("click", (e) => {
+  printToConsole(items);
+});
 
 function printToConsole(){
-    let template = tasksDef.map(tasksDef => `<li> ${items}</li>`);
-    document.querySelector('ul').innerHTML = template; }
+    let template = tasksDef.map(tasksDef => `<li>${tasksDef}</li>`).join('');
+    document.querySelector('#goals').innerHTML = template;}
+
+
+
+
+
+
 
 /*function render() {
     goals.innerHTML = "";
