@@ -18,9 +18,9 @@ resetSession.addEventListener("click", () => {
 
 //task 3: goals list.
 const goals = document.getElementById("goals");
-const addNew = document.getElementById("addNew");
-const addTask = document.getElementById("addTask");
-const clearList = document.getElementById("clearList");
+// const addNew = document.getElementById("addNew");
+// const addTask = document.getElementById("addTask");
+// const clearList = document.getElementById("clearList");
 const emptyList = document.getElementById("emptyList");
 
 const printConsole = document.getElementById("printConsole");
@@ -40,53 +40,17 @@ printConsole.addEventListener("click", (e) => {
 
 function printToConsole(){
     let template = tasksDef.map(tasksDef => `<li>${tasksDef}</li>`).join('');
-    document.querySelector('#goals').innerHTML = template;}
+    document.querySelector('#goals').innerHTML = template;
+document.getElementById("emptyList").style.visibility = "visible";
+
+
+}
 
 
 
 
+// emptyList.style.display = items.length === 0 ? "block" : "none"; 
 
-
-
-/*function render() {
-    goals.innerHTML = "";
-    items.forEach((text) => {
-      const li = document.createElement("li");
-      li.textContent = text;
-      li.dataset.item = text;
-      goals.appendChild(li); });*/
-
-
-//emptyList.style.display = items.length === 0 ? "block" : "none"; }
-
-/*
-function addItem() {
-    const value = addNew.value.trim();
-    if (value === "") return;
-    items.push(value);
-    addNew.value = "";
-    render();
-    addNew.focus(); }
-
-addNew.addEventListener("click", addItem);
-addNew.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") addItem(); });
-
-
-clearList.addEventListener("click", () => {
-    items = [];
-    render();
-    addNew.focus(); });
-
-
-goals.addEventListener("click", (e) => {
-    if (e.target.tagName !== "LI") return;
-    const text = e.target.textContent;
-    items = items.filter((item) => item !== text);
-    render(); });
-
-render();
-*/
 
 
 //task 4: hours studied.
