@@ -1,7 +1,9 @@
 /* Common elements */
-body{ background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+body{
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
     background-attachment: fixed;
-    font-family: arial, Helvetica; }
+    font-family: arial, Helvetica;
+}
 
 nav{
     margin: 0;
@@ -106,6 +108,7 @@ button:hover{ background-color: #555555; color: white; }
     background: #f8f8ed;
     margin: 10px 0 10px 0;
     padding: 5px;
+        z-index: 5;
 }
 
 .card:hover{ box-shadow: 0 12px 20px 0 rgba(0,0,0,0.3); }
