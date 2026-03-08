@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> My Study Dashboard </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="card-nav">
+        <nav>
+            <a href="assaignment2.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="contacts.html">Contact</a>
+        </nav>
+    </div>
+
+    <pre id="output"></pre>
+
+    <main>
+        <section class="card-container">
+            <div class="container d-flex">
+                <div class="cards d-flex">
+
+                    <!--profile-->
+                    <div class="card">
+                        <h1>Nina Welc</h1>
+                        <p>A CSSE student in second year</p>
+                        <p>Enjoys the creative aspect of coding and classes like Ux/Ui</p>
+                        <p>Begrudgingly takes maths modules</p>
+
+                        <img src="confused maths.jpg"
+                        alt="Image of a woman looking to the side confused with math eqations around her"
+                        width="250" height="250">
+                    </div>
+
+                    <!--weekly goals-->
+                    <div class="card">
+                        <h2>Weekly Goals</h2>
+                        <input id="addNew" placeholder="Add New Goal..."/>
+                        <button id="addTask">+</button>
+                        <button id="clearList">-</button>
+
+                        <button id="printConsole">Console Goals</button>
+
+                        <ul id="goals"></ul>
+                        <p class="empty-list" id="emptyList">Goals Completed!</p>
+                    </div>
+
+                    <!--status-->
+                    <div class="card">
+                        <h3>Study Status</h3>
+                        <p class="status">Status: </p>
+                        <p id="counter">Study Sessions: 0</p>
+                        <button id="addSession">Add</button>
+                        <button id="resetSession">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="mailto:NINA.WELC.2024@mumail.ie">Email me</a>
+        <p><small>© 2026 Nina Welc | CS230
+            Computer Science and Software Engineering
+            04/03
+        </small></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
