@@ -3,16 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title> My Study Dashboard </title>
+    <!--css link to stylesheet-->
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!--navugation links; lead nowhere-->
     <div class="card-nav">
         <nav>
-            <a href="assaignment2.html">Home</a>
-            <a href="profile.html">Profile</a>
-            <a href="tasks.html">Tasks</a>
-            <a href="contacts.html">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Tasks</a>
+            <a href="#">Contact</a>
         </nav>
     </div>
 
@@ -38,7 +40,7 @@
                     <!--weekly goals-->
                     <div class="card">
                         <h2>Weekly Goals</h2>
-                        <button id="printConsole">Console Goals</button>
+                        <button id="printConsole">Console Goals</button> <!--press to load list-->
 
                         <ul id="goals"></ul>
                         <p class="empty-list" id="emptyList">Goals Loaded!</p>
@@ -49,8 +51,8 @@
                         <h3>Study Status</h3>
                         <p class="status">Status: </p>
                         <p id="counter">Study Sessions: 0</p>
-                        <button id="addSession">Add</button>
-                        <button id="resetSession">Reset</button>
+                        <button id="addSession">Add</button> <!--increment counter-->
+                        <button id="resetSession">Reset</button> <!--reset counter-->
                     </div>
                 </div>
             </div>
@@ -64,7 +66,7 @@
             04/03
         </small></p>
     </footer>
-
+    <!--link to js script at bottom of body-->
     <script src="script.js"></script>
 </body>
 </html>

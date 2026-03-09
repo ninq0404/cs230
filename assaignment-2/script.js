@@ -2,13 +2,14 @@
 const output = document.getElementById("output");
 output.textContent = "Welcome, Nina";
 
+
 //task 2: study counter.
 let count = 0;
 const addSession = document.getElementById("addSession");
 const resetSession = document.getElementById("resetSession");
 const counter = document.getElementById("counter");
 
-addSession.addEventListener ("click", (e) =>{
+addSession.addEventListener ("click", () =>{
     count++;
     counter.textContent = `Study Sessions: ${count}`;}) // only these weird italic quotations make it work
 
@@ -16,13 +17,10 @@ resetSession.addEventListener("click", () => {
     count =0; //if count != 0 then it remembers the last add state i.e 22
     counter.textContent = `Study Sessions: 0`; });
 
+
 //task 3: goals list.
 const goals = document.getElementById("goals");
-// const addNew = document.getElementById("addNew");
-// const addTask = document.getElementById("addTask");
-// const clearList = document.getElementById("clearList");
 const emptyList = document.getElementById("emptyList");
-
 const printConsole = document.getElementById("printConsole");
 
 const tasksDef = ["Finish cs230 assignment",
@@ -33,24 +31,13 @@ let items = [...tasksDef];
 for (let i = 0; i < items.length; i++){
     console.log(items[i]); }
 
-
 printConsole.addEventListener("click", (e) => {
-  printToConsole(items);
-});
+  printToConsole(items); });
 
 function printToConsole(){
     let template = tasksDef.map(tasksDef => `<li>${tasksDef}</li>`).join('');
     document.querySelector('#goals').innerHTML = template;
-document.getElementById("emptyList").style.visibility = "visible";
-
-
-}
-
-
-
-
-// emptyList.style.display = items.length === 0 ? "block" : "none"; 
-
+    document.getElementById("emptyList").style.visibility = "visible"; }
 
 
 //task 4: hours studied.
