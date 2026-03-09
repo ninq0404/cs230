@@ -1,5 +1,6 @@
 /* Common elements */
 body{
+    margin: 0;
     background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
     background-attachment: fixed;
     font-family: arial, Helvetica;
@@ -28,7 +29,6 @@ footer{
     color: white;
     position: absolute;
     width: 100%;
-    bottom: 0;
     }
 
 
@@ -39,7 +39,10 @@ pre{
     font-size: 16px;
     margin-top: 5px;
     padding: 5px;}
-pre:hover {background-color: #555555; color: white; }
+
+pre:hover{
+    background-color: #555555;
+    color: white; }
 
 input{
     flex:1;
@@ -106,21 +109,17 @@ button:hover{ background-color: #555555; color: white; }
     transition: 0.3s;
     text-align: center;
     background: #f8f8ed;
-    margin: 10px 0 10px 0;
-    padding: 5px;
-        z-index: 5;
-}
+    margin: 0 0 10px 0;
+    padding: 5px; }
 
 .card:hover{ box-shadow: 0 12px 20px 0 rgba(0,0,0,0.3); }
 
 @media(max-width:768px){
     .card-container .cards .card{
-        flex: 0 0 100%;
-    } }
-
-@media(max-width:768px){
-    p, input, li{ font-size: small; }
-    h1, h2, h3{ font-size: medium; } }
-
-@media(max-width:768px){
-    img{display: none;} }
+        flex: 0 0 100%;}
+    p, input, li{
+    font-size: small; }
+    h1, h2, h3{
+    font-size: medium; }
+    img{
+    display: none;} }
