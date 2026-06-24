@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utl-8">
+        <title> Home Page </title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="assaignment1.html"> Home </a>
+            <a href="contacts.html"> Contact </a>
+        </nav>
+
+        <div class="home-container">
+
+        <div style="float: left; width:60%; ">
+        <h1 > Nina Welc </h1>
+        <p> Mini Profile </p>
+        <ul>
+            <li> Student no: 23402802</li> <!-- list with details -->
+            <li> Year: 2nd year </li>
+            <li> Course Title: CSSE </li>
+        </ul>
+    
+        <p> Hello my name is Nina Welc and this is a practice webpage using html and basic css</p>
+        <p> I'm from Pozan in Poland and I've a dog called Tesla - Like the scientist NOT the car </p>
+        <P> He's a black cocker spaniel but unfortunatley lacks the brains of his namesake. </P>
+        </div>
+            <div class="skill-card">
+                <h4 style="margin-left: 35px;"> My Skills: </h4>
+                <ul>
+                    <dt> Coding Languages </dt>
+                    <li> Java </li>
+                    <li> SQL </li>
+                    <li> C# </li>
+                </ul>
+                <ul>
+                    <dt> Personal </dt>
+                    <li> knitting </li>
+                    <li> reading </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="photo-container">
+        <div class="card" >
+            <img src="Tesla.jpg" alt="image of black cocker spaniel" >
+            <div class="photo-desc">
+                <h2> Tesla (dog)</h2>
+                <p> can sit ✓</p>
+                <p> likes (to chase) ducks ✓</p>
+                <p> developed the modern alternating current 𝓍</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="NikolaTesla.jpg" alt="portrait of Nikola Tesla" >
+            <div class="photo-desc">
+                <h3> Nikola Tesla</h3>
+                <p> can sit ✓</p>
+                <p> likes pigeons ✓</p>
+                <p> developed the modern alternating current ✓</p>
+            </div>
+        </div>
+        </section>
+
+        <table style="margin: 40px auto;">
+          <tr>
+              <tr> <th>-</th> <th>Monday</th> <th>Tuesday</th> <th>Wednesday</th> <th>Thursday</th> <th>Friday</th> </tr>
+              <tbody> <tr>
+                  <td> 9:00 </td>
+                  <th>CS211</th> <th>CS211 lab</th> <th>  </th> <th>  </th> <th>CS355</th>
+              </tr> </tbody>
+
+              <tbody> <tr>
+                  <td> 10:00 </td>
+                  <th>  </th> <th>CS211 lab</th> <th>  </th> <th>  </th> <th>CS355</th>
+              </tr> </tbody>
+
+              <tbody> <tr>
+                  <td> 11:00 </td>
+                  <th>  </th> <th>CS230 lab</th> <th>  </th> <th>CS240</th> <th>  </th>
+              </tr> </tbody>
+
+              <tbody> <tr>
+                  <td> 12:00 </td>
+                  <th>CS335</th> <th>CS230 lab</th> <th>  </th> <th>  </th> <th>  </th>
+              </tr> </tbody>
+
+              <tbody> <tr>
+                  <td> 13:00 </td>
+                  <th>  </th> <th>CS230</th> <th>  </th> <th>  </th> <th>  </th>
+              </tr> </tbody>
+
+              <tbody> <tr>
+                  <td> 14:00 </td>
+                  <th>CS211</th> <th>  </th> <th>CS280 lab</th> <th>CS240</th> <th>  </th>
+              </tr> </tbody>
+
+              <tbody> <tr>
+                  <td> 15:00 </td>
+                  <th>CS355 lab</th> <th>  </th> <th>  </th> <th>CS240 lab</th> <th>  </th>
+              </tr> </tbody>
+
+              <tbody> <tr>
+
+                  <td> 16:00 </td>
+                  <th>CS355 lab</th> <th>CS280</th> <th>CS335 lab</th> <th>CS240 lab</th> <th>  </th>
+              </tr> </tbody>
+
+              <tbody> <tr>
+                  <td> 17:00 </td>
+                  <th>CS335</th> <th>CS230</th> <th>CS335 lab</th> <th>  </th> <th>  </th>
+              </tr> </tbody>
+            </tr>
+          </table>
+
+    <footer>
+        <p>© 2026 Nina Welc | CS230</p>
+        <p>Computer Science and Software Engineering</p>
+        <p>updated: 04/03/2026</p>
+        <a href="mailto:NINA.WELC.2024@mumail.ie">Email me</a>
+    </footer>
+
+    </body>
+</html>
