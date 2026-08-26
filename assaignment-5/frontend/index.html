@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title></title>
+    </head>
+    <body>
+        <nav>
+            <a href="assaignment5.html">Home</a>
+            <a href="#ARTIST">Artist</a>
+            <a href="#ALBUM">Album</a>
+            <a href="#SONGS">Songs</a>
+        </nav>
+
+        <div class="card" id="HOME">
+            <h1>Welcome to the webpage </h1>
+            <p>this is our musical webpage!</p>
+        </div>
+
+        <div class="card" id="ARTIST">
+            <h2>ARTIST</h2>
+            <button onClick="loadArtists()" class="load" id="loadArtist">Load</button>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="genre" placeholder="Genre">
+            <input type="number" id="listeners" placeholder="Monthly Listeners">
+            <button onClick="addArtist()">Submit</button>
+
+            <div class="container">
+                <table id="artistsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Genre</th>
+                            <th>Monthly Listeners</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="artistsTable-tbody">
+                        <!-- inject here -->
+                    </tbody>
+                    
+                </table> 
+            </div>       
+        </div>
+
+
+
+        <div class="card" id="ALBUM">
+            <h2>ALBUM</h2>
+            <button onClick="loadAlbums()" class="load" id="loadAlbum">Load</button>
+            <input type="text" id="albumName" placeholder="Name">
+            <input type="number" id="albumYear" placeholder="Year">
+            <input type="number" id="listeners" placeholder="Number Listeners">
+            <input type="number" id="artistID" placeholder="Artist ID">
+            <button onClick="addAlbum()">Submit</button>
+
+            
+            <div class="container">
+                <table id="albumsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Year</th>
+                            <th>Number Listeners</th>
+                            <th>Artist ID</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="albumsTable-tbody">
+                        <!-- inject here -->
+                    </tbody>
+                    
+                </table> 
+            </div>
+            
+        </div>
+
+
+
+        <div class="card" id="SONGS">
+            <h2>SONGS</h2>
+            <button onClick="loadSongs()" class="load" id="loadSong">Load</button>
+            <input type="text" id="songName" placeholder="Name">
+            <input type="text" id="songYear" placeholder="Year">
+            <input type="number" id="albumID" placeholder="Album ID">
+            <button onClick="addSong()">Submit</button>
+
+            <div class="container">
+                <table id="songsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Year</th>
+                            <th>Album ID</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="songsTable-tbody">
+                        <!-- inject here -->
+                    </tbody>
+                    
+                </table> 
+            </div> 
+
+        </div>
+
+        <footer>
+        <a href="mailto:NINA.WELC.2024@mumail.ie">Email Me</a>
+        <script src="script.js"></script>
+    </footer>
+    </body>
+</html>
